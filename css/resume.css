@@ -190,3 +190,21 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+
+I just answered the same question
+
+You'll have to create your own tooltip. You don't need JavaScript, pure CSS is enough:
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background: #ffe;
+    border: 1px solid #eed;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+:hover + .tooltip {
+    display: block;
+}
+body { font-family: sans-serif; }
